@@ -9,7 +9,7 @@ import com.jogamp.opengl.GL2;
 public class Draw {
 	public static void PixelDraw(Graphics g,ArrayList<Integer> U ,ArrayList<Integer> V)
 	{
-		 Color myColour = new Color(0, 0, 0, 127);
+	 Color myColour = new Color(0, 0, 0, 127);
 		 
          g.setColor(myColour);
          int x[]= {U.get(0), U.get(1), U.get(2), U.get(3), U.get(4), U.get(5), U.get(0)};
