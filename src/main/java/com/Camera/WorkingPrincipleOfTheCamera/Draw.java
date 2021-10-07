@@ -80,136 +80,136 @@ public class Draw {
          g.fillPolygon(x8, y8, x8.length);
 	}
 	
-	public void RealDraw(GL2 cizim,ArrayList<Float> x ,ArrayList<Float> y ,ArrayList<Float> z,Coordinate f) 
+	public void RealDraw(GL2 draw,ArrayList<Float> x ,ArrayList<Float> y ,ArrayList<Float> z,Coordinate f) 
 	{
-		cizim.glBegin(GL2.GL_LINES );
-		cizim.glColor4f(1.0f, 0.0f, 0.0f,1.0f);
-		cizim.glVertex3f(0, 0, 0); 
-		cizim.glVertex3f(200, 0, 0);
-		cizim.glEnd();
+		draw.glBegin(GL2.GL_LINES );
+		draw.glColor4f(1.0f, 0.0f, 0.0f,1.0f);
+		draw.glVertex3f(0, 0, 0); 
+		draw.glVertex3f(200, 0, 0);
+		draw.glEnd();
 		
-		cizim.glBegin(GL2.GL_LINES );
-		cizim.glColor4f(0.0f, 1.0f, 0.0f,1.0f);
-		cizim.glVertex3f(0, 0, 0); 
-		cizim.glVertex3f(0, 200, 0);
-		cizim.glEnd();
+		draw.glBegin(GL2.GL_LINES );
+		draw.glColor4f(0.0f, 1.0f, 0.0f,1.0f);
+		draw.glVertex3f(0, 0, 0); 
+		draw.glVertex3f(0, 200, 0);
+		draw.glEnd();
 		
-		cizim.glBegin(GL2.GL_LINES );
-		cizim.glColor4f(0.0f, 0.0f, 1.0f,1.0f);
-		cizim.glVertex3f(0, 0, 0); 
-		cizim.glVertex3f(0, 0, 200);
-		cizim.glEnd();
+		draw.glBegin(GL2.GL_LINES );
+		draw.glColor4f(0.0f, 0.0f, 1.0f,1.0f);
+		draw.glVertex3f(0, 0, 0); 
+		draw.glVertex3f(0, 0, 200);
+		draw.glEnd();
 	
-		cizim.glBegin(GL2.GL_POLYGON );
-		cizim.glColor4f(0.0f, 0.0f, 0.0f, 0.3f);
-		cizim.glVertex3f(x.get(0), y.get(0), z.get(0)); 
-		cizim.glVertex3f(x.get(5), y.get(5), z.get(5));
-		cizim.glVertex3f(x.get(23), y.get(23), z.get(23));
-		cizim.glVertex3f(x.get(22), y.get(22), z.get(22));
-		cizim.glEnd();
+		draw.glBegin(GL2.GL_POLYGON );
+		draw.glColor4f(0.0f, 0.0f, 0.0f, 0.3f);
+		draw.glVertex3f(x.get(0), y.get(0), z.get(0)); 
+		draw.glVertex3f(x.get(5), y.get(5), z.get(5));
+		draw.glVertex3f(x.get(23), y.get(23), z.get(23));
+		draw.glVertex3f(x.get(22), y.get(22), z.get(22));
+		draw.glEnd();
 		
-		cizim.glBegin(GL2.GL_POLYGON );
-		cizim.glColor4f(0.0f, 0.0f, 0.0f,0.5f);
-		cizim.glVertex3f(x.get(0), y.get(0), z.get(0)); 
-		cizim.glVertex3f(x.get(5), y.get(5), z.get(5));
-		cizim.glVertex3f(x.get(4), y.get(4), z.get(4));
-		cizim.glVertex3f(x.get(3), y.get(3), z.get(3));
-		cizim.glEnd();
+		draw.glBegin(GL2.GL_POLYGON );
+		draw.glColor4f(0.0f, 0.0f, 0.0f,0.5f);
+		draw.glVertex3f(x.get(0), y.get(0), z.get(0)); 
+		draw.glVertex3f(x.get(5), y.get(5), z.get(5));
+		draw.glVertex3f(x.get(4), y.get(4), z.get(4));
+		draw.glVertex3f(x.get(3), y.get(3), z.get(3));
+		draw.glEnd();
 		
-		cizim.glBegin(GL2.GL_POLYGON );
-		cizim.glColor4f(1.0f, 0.5f, 0.0f,0.5f);
-		cizim.glVertex3f(x.get(4), y.get(4), z.get(4)); 
-		cizim.glVertex3f(x.get(17), y.get(17), z.get(17));
-		cizim.glVertex3f(x.get(23), y.get(23), z.get(23));
-		cizim.glVertex3f(x.get(5), y.get(5), z.get(5));
-		cizim.glEnd();
+		draw.glBegin(GL2.GL_POLYGON );
+		draw.glColor4f(1.0f, 0.5f, 0.0f,0.5f);
+		draw.glVertex3f(x.get(4), y.get(4), z.get(4)); 
+		draw.glVertex3f(x.get(17), y.get(17), z.get(17));
+		draw.glVertex3f(x.get(23), y.get(23), z.get(23));
+		draw.glVertex3f(x.get(5), y.get(5), z.get(5));
+		draw.glEnd();
 		
-		cizim.glBegin(GL2.GL_POLYGON );
-		cizim.glColor4f(0.0f, 0.0f, 0.0f,0.3f);
-		cizim.glVertex3f(x.get(3), y.get(3), z.get(3)); 
-		cizim.glVertex3f(x.get(16), y.get(16), z.get(16));
-		cizim.glVertex3f(x.get(17), y.get(17), z.get(17));
-		cizim.glVertex3f(x.get(4), y.get(4), z.get(4));
-		cizim.glEnd();
+		draw.glBegin(GL2.GL_POLYGON );
+		draw.glColor4f(0.0f, 0.0f, 0.0f,0.3f);
+		draw.glVertex3f(x.get(3), y.get(3), z.get(3)); 
+		draw.glVertex3f(x.get(16), y.get(16), z.get(16));
+		draw.glVertex3f(x.get(17), y.get(17), z.get(17));
+		draw.glVertex3f(x.get(4), y.get(4), z.get(4));
+		draw.glEnd();
 		
-		cizim.glBegin(GL2.GL_POLYGON );
-		cizim.glColor4f(0.0f, 0.0f, 0.0f,0.5f);
-		cizim.glVertex3f(x.get(17), y.get(17), z.get(17)); 
-		cizim.glVertex3f(x.get(23), y.get(23), z.get(23));
-		cizim.glVertex3f(x.get(22), y.get(22), z.get(22));
-		cizim.glVertex3f(x.get(16), y.get(16), z.get(16));
-		cizim.glEnd();
+		draw.glBegin(GL2.GL_POLYGON );
+		draw.glColor4f(0.0f, 0.0f, 0.0f,0.5f);
+		draw.glVertex3f(x.get(17), y.get(17), z.get(17)); 
+		draw.glVertex3f(x.get(23), y.get(23), z.get(23));
+		draw.glVertex3f(x.get(22), y.get(22), z.get(22));
+		draw.glVertex3f(x.get(16), y.get(16), z.get(16));
+		draw.glEnd();
 		
-		cizim.glBegin(GL2.GL_POLYGON );
-		cizim.glColor4f(1.0f, 0.0f, 0.0f,0.5f);
-		cizim.glVertex3f(x.get(1), y.get(1), z.get(1)); 
-		cizim.glVertex3f(x.get(2), y.get(2), z.get(2));
-		cizim.glVertex3f(x.get(10), y.get(10), z.get(10));
-		cizim.glVertex3f(x.get(11), y.get(11), z.get(11));
-		cizim.glEnd();
+		draw.glBegin(GL2.GL_POLYGON );
+		draw.glColor4f(1.0f, 0.0f, 0.0f,0.5f);
+		draw.glVertex3f(x.get(1), y.get(1), z.get(1)); 
+		draw.glVertex3f(x.get(2), y.get(2), z.get(2));
+		draw.glVertex3f(x.get(10), y.get(10), z.get(10));
+		draw.glVertex3f(x.get(11), y.get(11), z.get(11));
+		draw.glEnd();
 		
-		cizim.glBegin(GL2.GL_POLYGON );
-		cizim.glColor4f(0.0f, 0.0f, 1.0f,0.5f);
-		cizim.glVertex3f(x.get(6), y.get(6), z.get(6)); 
-		cizim.glVertex3f(x.get(7), y.get(7), z.get(7));
-		cizim.glVertex3f(x.get(8), y.get(8), z.get(8));
-		cizim.glVertex3f(x.get(9), y.get(9), z.get(9));
-		cizim.glEnd();
+		draw.glBegin(GL2.GL_POLYGON );
+		draw.glColor4f(0.0f, 0.0f, 1.0f,0.5f);
+		draw.glVertex3f(x.get(6), y.get(6), z.get(6)); 
+		draw.glVertex3f(x.get(7), y.get(7), z.get(7));
+		draw.glVertex3f(x.get(8), y.get(8), z.get(8));
+		draw.glVertex3f(x.get(9), y.get(9), z.get(9));
+		draw.glEnd();
 		
-		cizim.glBegin(GL2.GL_POLYGON );
-		cizim.glColor4f(0.0f, 0.0f, 1.0f,0.5f);
-		cizim.glVertex3f(x.get(12), y.get(12), z.get(12)); 
-		cizim.glVertex3f(x.get(13), y.get(13), z.get(13));
-		cizim.glVertex3f(x.get(14), y.get(14), z.get(14));
-		cizim.glVertex3f(x.get(15), y.get(15), z.get(15));
-		cizim.glEnd();
+		draw.glBegin(GL2.GL_POLYGON );
+		draw.glColor4f(0.0f, 0.0f, 1.0f,0.5f);
+		draw.glVertex3f(x.get(12), y.get(12), z.get(12)); 
+		draw.glVertex3f(x.get(13), y.get(13), z.get(13));
+		draw.glVertex3f(x.get(14), y.get(14), z.get(14));
+		draw.glVertex3f(x.get(15), y.get(15), z.get(15));
+		draw.glEnd();
 		
-		cizim.glBegin(GL2.GL_POLYGON );
-		cizim.glColor4f(0.0f, 0.0f, 1.0f,0.5f);
-		cizim.glVertex3f(x.get(24), y.get(24), z.get(24)); 
-		cizim.glVertex3f(x.get(25), y.get(25), z.get(25));
-		cizim.glVertex3f(x.get(26), y.get(26), z.get(26));
-		cizim.glVertex3f(x.get(27), y.get(27), z.get(27));
-		cizim.glEnd();
+		draw.glBegin(GL2.GL_POLYGON );
+		draw.glColor4f(0.0f, 0.0f, 1.0f,0.5f);
+		draw.glVertex3f(x.get(24), y.get(24), z.get(24)); 
+		draw.glVertex3f(x.get(25), y.get(25), z.get(25));
+		draw.glVertex3f(x.get(26), y.get(26), z.get(26));
+		draw.glVertex3f(x.get(27), y.get(27), z.get(27));
+		draw.glEnd();
 		
-		cizim.glBegin(GL2.GL_POLYGON );
-		cizim.glColor4f(0.0f, 0.0f, 1.0f,0.5f);
-		cizim.glVertex3f(x.get(18), y.get(18), z.get(18)); 
-		cizim.glVertex3f(x.get(19), y.get(19), z.get(19));
-		cizim.glVertex3f(x.get(20), y.get(20), z.get(20));
-		cizim.glVertex3f(x.get(21), y.get(21), z.get(21));
-		cizim.glEnd();
+		draw.glBegin(GL2.GL_POLYGON );
+		draw.glColor4f(0.0f, 0.0f, 1.0f,0.5f);
+		draw.glVertex3f(x.get(18), y.get(18), z.get(18)); 
+		draw.glVertex3f(x.get(19), y.get(19), z.get(19));
+		draw.glVertex3f(x.get(20), y.get(20), z.get(20));
+		draw.glVertex3f(x.get(21), y.get(21), z.get(21));
+		draw.glEnd();
 		
-		cizim.glBegin(GL2.GL_POLYGON );
-		cizim.glColor4f(1.0f, 1.0f, 0.0f,1.0f);
-		cizim.glVertex3d(f.g[0], f.g[1], f.g[2]); 
-		cizim.glVertex3d((f.g[0] + 2 * (f.f[0] - f.g[0])), (f.g[1] + 2 * (f.f[1] - f.g[1])), f.g[2]);
-		cizim.glVertex3d((f.g[0] + 2 * (f.f[0] - f.g[0])), (f.g[1] + 2 * (f.f[1] - f.g[1])), (f.g[2] + 2 * (f.f[2] - f.g[2])));
-		cizim.glVertex3d(f.g[0], f.g[1], (f.g[2] + 2 * (f.f[2] - f.g[2])));
-		cizim.glEnd();
+		draw.glBegin(GL2.GL_POLYGON );
+		draw.glColor4f(1.0f, 1.0f, 0.0f,1.0f);
+		draw.glVertex3d(f.g[0], f.g[1], f.g[2]); 
+		draw.glVertex3d((f.g[0] + 2 * (f.f[0] - f.g[0])), (f.g[1] + 2 * (f.f[1] - f.g[1])), f.g[2]);
+		draw.glVertex3d((f.g[0] + 2 * (f.f[0] - f.g[0])), (f.g[1] + 2 * (f.f[1] - f.g[1])), (f.g[2] + 2 * (f.f[2] - f.g[2])));
+		draw.glVertex3d(f.g[0], f.g[1], (f.g[2] + 2 * (f.f[2] - f.g[2])));
+		draw.glEnd();
 		
-		cizim.glBegin(GL2.GL_LINES );
-		cizim.glColor4f(0.0f,1.0f, 0.0f,1.0f);
-		cizim.glVertex3d(Data.X0, Data.Y0, Data.Z0); 
-		cizim.glVertex3d(f.g[0], f.g[1], f.g[2]);
-		cizim.glEnd();
+		draw.glBegin(GL2.GL_LINES );
+		draw.glColor4f(0.0f,1.0f, 0.0f,1.0f);
+		draw.glVertex3d(Data.X0, Data.Y0, Data.Z0); 
+		draw.glVertex3d(f.g[0], f.g[1], f.g[2]);
+		draw.glEnd();
 		
-		cizim.glBegin(GL2.GL_LINES );
-		cizim.glColor4f(1.0f,0.0f, 0.0f,1.0f);
-		cizim.glVertex3d(Data.X0, Data.Y0, Data.Z0); 
-		cizim.glVertex3d(f.f[0], f.f[1], f.f[2]);
-		cizim.glEnd();
+		draw.glBegin(GL2.GL_LINES );
+		draw.glColor4f(1.0f,0.0f, 0.0f,1.0f);
+		draw.glVertex3d(Data.X0, Data.Y0, Data.Z0); 
+		draw.glVertex3d(f.f[0], f.f[1], f.f[2]);
+		draw.glEnd();
 		
-		cizim.glBegin(GL2.GL_LINES );
-		cizim.glColor4f(0.0f,1.0f, 0.0f,1.0f);
-		cizim.glVertex3d(Data.X0, Data.Y0, Data.Z0); 
-		cizim.glVertex3d((f.g[0]  +2 * (f.f[0] - f.g[0])), (f.g[1] + 2 * (f.f[1] - f.g[1])), (f.g[2] + 2 * (f.f[2] - f.g[2])));
-		cizim.glEnd();
+		draw.glBegin(GL2.GL_LINES );
+		draw.glColor4f(0.0f,1.0f, 0.0f,1.0f);
+		draw.glVertex3d(Data.X0, Data.Y0, Data.Z0); 
+		draw.glVertex3d((f.g[0]  +2 * (f.f[0] - f.g[0])), (f.g[1] + 2 * (f.f[1] - f.g[1])), (f.g[2] + 2 * (f.f[2] - f.g[2])));
+		draw.glEnd();
 		
-		cizim.glBegin(GL2.GL_LINES );
-		cizim.glColor4f(1.0f,0.0f, 1.0f,1.0f);
-		cizim.glVertex3d(f.f[0], f.f[1], f.f[2]); 
-		cizim.glVertex3d(f.Mx,f.My,f.Mz);
-		cizim.glEnd();
+		draw.glBegin(GL2.GL_LINES );
+		draw.glColor4f(1.0f,0.0f, 1.0f,1.0f);
+		draw.glVertex3d(f.f[0], f.f[1], f.f[2]); 
+		draw.glVertex3d(f.Mx,f.My,f.Mz);
+		draw.glEnd();
 	}
 }
